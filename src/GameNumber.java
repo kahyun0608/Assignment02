@@ -54,11 +54,15 @@ public class GameNumber {
                 score.add("ball");
             }
         }
+        // 입력값에 대한 결과 출력
         if (Collections.frequency(score, "strike") == 3) {
             System.out.println("정답입니다!");
             return true;
         } else {
-            System.out.println(score);
+            PrintScore.printScore(score, "strike");
+            PrintScore.printScore(score, "ball");
+            PrintScore.printScore(score, "out");
+            System.out.println();
             return false;
         }
     }
