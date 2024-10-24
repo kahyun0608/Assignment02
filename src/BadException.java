@@ -1,5 +1,5 @@
 public class BadException extends RuntimeException {
     public BadException() {
-        super("오류가 발생하였습니다. 숫자를 다시 입력해주세요.");
+        super("잘못된 입력값입니다. 다시 입력해주세요.");
     }
 }
