@@ -6,7 +6,6 @@ public class BaseballGame extends GameNumber {
     public BaseballGame() {
         System.out.println("게임시작");
         makeGameNumber();
-//        settingEachNumbers();
         System.out.println(gameNumberList);
 
     }
