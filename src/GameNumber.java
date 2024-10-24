@@ -56,7 +56,7 @@ public class GameNumber {
         }
         // 입력값에 대한 결과 출력
         if (Collections.frequency(score, "strike") == 3) {
-            System.out.println("정답입니다!");
+            System.out.println("✿｡ﾟฺ.* ૢ°₊·*:❀정답입니다!❀°₊·ˈ‧₊°ෆೄ*｡✿");
             return true;
         } else {
             PrintScore.printScore(score, "strike");
