@@ -1,5 +1,6 @@
 public class Main extends BaseballGame {
     public static void main(String[] args) {
+        System.out.println("+:..* 숫자 야구 게임 *..:+");
         boolean gameWin = false;
         while (!gameWin) {
             try {
