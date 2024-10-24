@@ -4,22 +4,12 @@ public class GameNumber {
     //필드
     HashSet<Integer> gameNumberSet;
     ArrayList<Integer> gameNumberList;
-    //프로그램 생성 숫자를 저장
-    int firstNumber;
-    int secondNumber;
-    int thirdNumber;
 
     //플레이어가 입력한 숫자를 저장
     ArrayList<Integer> inputNumberList;
-    int firstInput;
-    int secondInput;
-    int thirdInput;
 
     //시도횟수를 저장
     int trynumber = 0;
-
-    //strike, ball, out의 개수를 저장
-//    ArrayList<String> score=new ArrayList<String>();
 
 
     //메서드
@@ -34,15 +24,6 @@ public class GameNumber {
         this.gameNumberList = new ArrayList<>(gameNumbers);
         return gameNumberSet;
     }
-
-    //set에서 숫자 순서대로 저장하기
-//    public void settingEachNumbers() {
-//        Iterator<Integer> iterator = this.gameNumbers.iterator();
-//        this.firstNumber = iterator.next();
-//        this.secondNumber = iterator.next();
-//        this.thirdNumber = iterator.next();
-//        System.out.println(firstNumber+" "+secondNumber+" "+thirdNumber);
-//    }
 
     //입력값을 필드에 지정하기
     public void settingInput(String threeNumbers) throws BadException {
@@ -59,9 +40,6 @@ public class GameNumber {
             throw new BadException();
         }
         this.inputNumberList = new ArrayList<>(checkingSet);
-//        this.firstInput = Character.getNumericValue(firstNum);
-//        this.secondInput = Character.getNumericValue(secondNum);
-//        this.thirdInput = Character.getNumericValue(thirdNum);
     }
 
     //입력한 숫자가 포함되어있는지 확인 (아닐시 out)
