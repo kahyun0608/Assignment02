@@ -13,7 +13,13 @@ public class GameApp {
         String start = sc.nextLine();
         switch (start) {
             case "1":                                             //1번 게임 시작하기 선택
-                BaseballGame baseballGame = new BaseballGame();
+                System.out.println("설정하고자 하는 자리수를 입력하세요. -> 3, 4, 5");
+                String difficultyInput = sc.nextLine();
+                //345가 아닐 경우 오류를 출력하자
+                while (!difficultyInput.matches("^[3-5]*$")) {
+                    throw new BadException();
+                }
+                BaseballGame baseballGame = new BaseballGame(difficultyInput);
                 boolean gameWin = false;
                 while (!gameWin) {                    //게임 한 판(round) 시작
                     try {
