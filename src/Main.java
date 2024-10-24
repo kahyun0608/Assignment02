@@ -4,8 +4,8 @@ public class Main extends BaseballGame {
         while (!gameWin) {
             try {
                 gameWin = GameApp.start();
-            } catch (Exception e) {
-                System.out.println();
+            } catch (BadException e) {
+                System.out.println(e.getMessage());
             }
         }
     }
