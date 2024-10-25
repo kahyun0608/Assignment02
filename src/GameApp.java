@@ -24,13 +24,13 @@ public class GameApp {
                 while (!gameWin) {                    //게임 한 판(round) 시작
                     try {
                         gameWin = baseballGame.play(); //게임 구동 -> 한 번의 숫자 입력 후 결과출력
-                        baseballGame.trynumber += 1; //시도 횟수 + 1
+                        baseballGame.tryNumber += 1; //시도 횟수 + 1
 
                     } catch (BadException e) {
                         System.out.println(e.getMessage());
                     }
                 }
-                record.add(baseballGame.trynumber);     //방금 한 게임의 시도횟수 저장
+                record.add(baseballGame.tryNumber);     //방금 한 게임의 시도횟수 저장
                 return false;
             case "2":                                          // 2번 게임 기록 보기 선택
                 System.out.println("<게임 기록 보기>");
