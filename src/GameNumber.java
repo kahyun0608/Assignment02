@@ -10,7 +10,7 @@ public class GameNumber {
     ArrayList<Integer> inputNumberList;
 
     //시도횟수를 저장
-    int trynumber = 0;
+    int tryNumber = 0;
 
     //난이도
     int difficulty;
