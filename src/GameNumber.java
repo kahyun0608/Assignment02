@@ -26,7 +26,6 @@ public class GameNumber {
         }
         this.gameNumberSet = gameNumbers;
         this.gameNumberList = new ArrayList<>(gameNumbers);
-        System.out.println(gameNumbers);
         return gameNumberSet;
     }
 
